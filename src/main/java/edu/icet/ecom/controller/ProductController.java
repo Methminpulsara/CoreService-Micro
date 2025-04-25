@@ -3,16 +3,15 @@ package edu.icet.ecom.controller;
 import edu.icet.ecom.model.Product;
 import edu.icet.ecom.service.ProductService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//@Controller+@Component+@Responsbody = @RestController
 @RestController
-    @RequestMapping("/product")
+@RequestMapping("/product")
 @RequiredArgsConstructor
+@ResponseBody
 public class ProductController {
 
 
